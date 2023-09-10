@@ -48,14 +48,14 @@ public class Table {
 
 
 
-        // Create the menu bar
+
         JMenuBar tableMenuBar = createTableMenuBar();
         this.gameFrame.setJMenuBar(tableMenuBar);
         this.sidePanel = new Checkers.gui.sidePanel();
         this.gameFrame.add(sidePanel, BorderLayout.SOUTH);
         this.boardPanel = new Checkers.gui.BoardPanel(this,sidePanel);
         this.checkerBoard = CheckerBoard.createNewCheckerBoard();
-        // Create the game over panel
+
 
         this.gameOverPanel = new Checkers.gui.GameOverPanel(this);
 
@@ -88,18 +88,18 @@ public class Table {
         restartMenuItem.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                // Handle the restart action
+
                 restartGame();
             }
         });
         fileMenu.add(restartMenuItem);
 
-        // Add an "Exit" menu item
+
         JMenuItem exitMenuItem = new JMenuItem("Exit");
         exitMenuItem.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                // Handle the exit action (e.g., call System.exit(0))
+
                 System.exit(0);
             }
         });
@@ -116,16 +116,11 @@ public class Table {
             gameOverPanel.setColor(this.checkerBoard.currentPlayer().getOpponent().getPieceColor());
             gameOverPanel.setVisible(true);
             System.out.println("GameOverPanel created");
-            // Show the game-over panel
-
-
-            // Repaint the frame to make the changes visible
             gameFrame.revalidate();
             gameFrame.repaint();
         }
     }
 
-    // Create a method to restart the game
     public void restartGame() {
 
         checkerBoard = CheckerBoard.createNewCheckerBoard();
@@ -139,7 +134,7 @@ public class Table {
         boardPanel.drawBoard(checkerBoard);
 
 
-        // Redraw the board
+
 
     }
 

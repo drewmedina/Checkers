@@ -23,7 +23,7 @@ public class GameOverPanel extends JPanel {
 
         JButton restartButton = new JButton("New Game");
         gameOverMessage.setFont(new Font("Helvetica Neue", Font.BOLD, 35));
-        restartButton.setBackground(Color.decode("#140a07")); // Set the background color
+        restartButton.setBackground(Color.decode("#140a07"));
         restartButton.setForeground(Color.WHITE);
         restartButton.addActionListener(new ActionListener() {
             @Override
