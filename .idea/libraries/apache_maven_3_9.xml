@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="apache-maven-3.9">
+    <CLASSES>
+      <root url="file://$USER_HOME$/Downloads/apache-maven-3.9.4-bin" />
+      <root url="jar://$USER_HOME$/Downloads/commons-collections4-4.4-bin/commons-collections4-4.4/commons-collections4-4.4.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="file://$USER_HOME$/Downloads/commons-collections4-4.4-bin/commons-collections4-4.4/apidocs" />
+    </JAVADOC>
+    <SOURCES />
+    <jarDirectory url="file://$USER_HOME$/Downloads/apache-maven-3.9.4-bin" recursive="false" />
+  </library>
+</component>
